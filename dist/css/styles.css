@@ -57,7 +57,8 @@ body {
       width: 70%;
       margin-right: auto;
       margin-left: auto;
-      margin-top: 20px; }
+      margin-top: 20px;
+      border-radius: 24px; }
     body #header input[type="text"]::-webkit-input-placeholder {
       text-align: center; }
     body #header input[type="text"]::-moz-placeholder {
@@ -169,7 +170,8 @@ body .movies_container #movie {
   margin-bottom: 80px; }
   body .container #movie .flex-row,
   body .movies_container #movie .flex-row {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     body .container #movie .flex-row .img-container,
     body .movies_container #movie .flex-row .img-container {
       flex-basis: auto;
