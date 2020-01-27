@@ -20,7 +20,7 @@ function imgError(image) {
 function getMovies(searchText) {
   //   console.log(searchText);
   axios
-    .get("http://omdbapi.com/?apikey=1e93644a&s=" + searchText)
+    .get("https://omdbapi.com/?apikey=1e93644a&s=" + searchText)
     .then(res => {
       //   console.log(res);
       let movies = res.data.Search; // array
@@ -53,7 +53,7 @@ function movieSelected(id) {
 function getMovie() {
   let movieId = sessionStorage.getItem("movieId");
   axios
-    .get("http://omdbapi.com/?apikey=1e93644a&i=" + movieId)
+    .get("https://omdbapi.com/?apikey=1e93644a&i=" + movieId)
     .then(res => {
       console.log(res);
       let movie = res.data;
