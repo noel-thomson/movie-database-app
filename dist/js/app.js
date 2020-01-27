@@ -19,7 +19,7 @@ function imgError(image) {
 
 function getMovies(searchText) {
   //   console.log(searchText);
-  axios.get("http://omdbapi.com/?apikey=1e93644a&s=" + searchText).then(function (res) {
+  axios.get("https://omdbapi.com/?apikey=1e93644a&s=" + searchText).then(function (res) {
     //   console.log(res);
     var movies = res.data.Search; // array
 
@@ -42,7 +42,7 @@ function movieSelected(id) {
 
 function getMovie() {
   var movieId = sessionStorage.getItem("movieId");
-  axios.get("http://omdbapi.com/?apikey=1e93644a&i=" + movieId).then(function (res) {
+  axios.get("https://omdbapi.com/?apikey=1e93644a&i=" + movieId).then(function (res) {
     console.log(res);
     var movie = res.data;
     var output = "\n        <div class= \"flex-row\">\n            <div class= \"img-container\">\n                <img src=\"".concat(movie.Poster, "\" class=\"thumbnail\" onerror=\"imgError(this);\"></img>\n            </div>\n            <div class= \"details-container\">\n                <h5>").concat(movie.Title, "</h5>\n                <ul class=\"movie-details\">\n                    <li class=\"list-group-item\"><span>Released: </span>").concat(movie.Year, "</li>\n                    <li class=\"list-group-item\"><span>Genre: </span>").concat(movie.Genre, "</li>\n                    <li class=\"list-group-item\"><span>Rating: </span>").concat(movie.Rated, "</li>\n                    <li class=\"list-group-item\"><span>IMDB Score: </span>").concat(movie.imdbRating, "</li>\n                    <li class=\"list-group-item\"><span>Runtime: </span>").concat(movie.Runtime, "</li>\n                    <li class=\"list-group-item\"><span>Actors: </span>").concat(movie.Actors, "</li>\n                    <li class=\"list-group-item\"><span>Writers: </span>").concat(movie.Writer, "</li>\n                    <li class=\"list-group-item\"><span>Director: </span>").concat(movie.Director, "</li>\n                </ul>\n            </div>\n        </div>\n        <div class=\"row\">\n            <div class=\"card\">\n                <div class=\"card-body\">\n                    <h4>Plot</h4>\n                    <p>").concat(movie.Plot, "</p>\n                    <hr>\n                    <a href=\"https://imdb.com/title/").concat(movie.imdbID, "\" class=\"btn btn-primary\">View on IMDB</a>\n                    <a href=\"index.html\" class=\"btn btn-secondary\">Back to Search</a>\n                </div>\n            </div>\n        </div>");
