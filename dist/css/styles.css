@@ -38,7 +38,7 @@ body {
   background: #f9f9f9;
   position: relative; }
   body nav {
-    padding: 0px 16px !important; }
+    padding: 0px !important; }
     body nav .navbar-header {
       margin: 0 auto; }
       body nav .navbar-header a {
@@ -54,7 +54,7 @@ body {
   body #header {
     margin-bottom: 20px; }
     body #header input {
-      width: 70%;
+      width: 500px;
       margin-right: auto;
       margin-left: auto;
       margin-top: 20px;
@@ -72,7 +72,8 @@ body {
     body #header input:focus {
       border-color: transparent; }
   body #movies {
-    margin-bottom: 80px; }
+    margin-bottom: 80px;
+    min-height: 95vh; }
     body #movies .card-container {
       padding-left: 10px;
       padding-right: 10px; }
@@ -150,14 +151,13 @@ body {
         margin-left: 0 !important;
         margin-right: 0 !important; } }
   body footer {
-    position: fixed;
     text-align: center;
     padding: 8px;
     font-size: 12px;
     bottom: 0;
-    height: 50px;
+    height: 5vh;
     background: #282828;
-    width: 100vw;
+    width: 100%;
     color: white; }
     body footer a {
       text-decoration: underline;
@@ -167,7 +167,8 @@ body {
 
 body .container #movie,
 body .movies_container #movie {
-  margin-bottom: 80px; }
+  margin-bottom: 80px;
+  min-height: 75.5vh; }
   body .container #movie .flex-row,
   body .movies_container #movie .flex-row {
     display: flex;

@@ -2,7 +2,7 @@ body {
   background: #f9f9f9;
   position: relative;
   nav {
-    padding: 0px 16px !important;
+    padding: 0px !important;
     .navbar-header {
       margin: 0 auto;
       a {
@@ -22,7 +22,7 @@ body {
   #header {
     margin-bottom: 20px;
     input {
-      width: 70%;
+      width: 500px;
       margin-right: auto;
       margin-left: auto;
       margin-top: 20px;
@@ -37,6 +37,7 @@ body {
   }
   #movies {
     margin-bottom: 80px;
+    min-height: 95vh;
     .card-container {
       padding-left: 10px;
       padding-right: 10px;
@@ -165,14 +166,13 @@ body {
     }
   }
   footer {
-    position: fixed;
     text-align: center;
     padding: 8px;
     font-size: 12px;
     bottom: 0;
-    height: 50px;
+    height: 5vh;
     background: #282828;
-    width: 100vw;
+    width: 100%;
     color: white;
     a {
       text-decoration: underline;

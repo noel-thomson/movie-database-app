@@ -3,6 +3,7 @@ body {
   .movies_container {
     #movie {
       margin-bottom: 80px;
+      min-height: 75.5vh;
       .flex-row {
         display: flex;
         align-items: center;
