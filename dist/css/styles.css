@@ -59,6 +59,9 @@ body {
       margin-left: auto;
       margin-top: 20px;
       border-radius: 24px; }
+    @media (max-width: 767px) {
+      body #header input {
+        width: 90%; } }
     body #header input[type="text"]::-webkit-input-placeholder {
       text-align: center; }
     body #header input[type="text"]::-moz-placeholder {
