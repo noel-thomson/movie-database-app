@@ -158,10 +158,10 @@ body {
     padding: 8px;
     font-size: 12px;
     bottom: 0;
-    height: 5vh;
     background: #282828;
     width: 100%;
-    color: white; }
+    color: white;
+    font-weight: 500; }
     body footer a {
       text-decoration: underline;
       color: white; }
