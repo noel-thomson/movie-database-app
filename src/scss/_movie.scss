@@ -70,6 +70,16 @@ body {
           .btn-primary {
             margin-right: 15px;
           }
+          @media (max-width: 377px) {
+            .btn-primary {
+              margin-right: 0;
+            }
+          }
+          @media (max-width: 362px) {
+            .btn-secondary {
+              margin-top: 15px;
+            }
+          }
         }
       }
     }

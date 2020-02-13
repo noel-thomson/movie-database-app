@@ -246,3 +246,11 @@ body .movies_container #movie {
       body .container #movie .card .card-body .btn-primary,
       body .movies_container #movie .card .card-body .btn-primary {
         margin-right: 15px; }
+      @media (max-width: 377px) {
+        body .container #movie .card .card-body .btn-primary,
+        body .movies_container #movie .card .card-body .btn-primary {
+          margin-right: 0; } }
+      @media (max-width: 362px) {
+        body .container #movie .card .card-body .btn-secondary,
+        body .movies_container #movie .card .card-body .btn-secondary {
+          margin-top: 15px; } }
