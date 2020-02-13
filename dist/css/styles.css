@@ -167,7 +167,8 @@ body {
     bottom: 0;
     background: #282828;
     width: 100%;
-    color: white; }
+    color: white;
+    font-weight: 500; }
     body footer a {
       text-decoration: underline;
       color: white; }
