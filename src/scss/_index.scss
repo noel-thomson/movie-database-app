@@ -5,7 +5,14 @@ body {
     padding: 0px !important;
     .navbar-header {
       margin: 0 auto;
-      a {
+      width: 100%;
+      a.navbar-brand {
+        white-space: normal !important;
+        word-break: break-word;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+        word-wrap: normal;
         font-weight: 600;
         margin-right: 0;
         margin-top: 20px;
@@ -175,7 +182,6 @@ body {
     padding: 8px;
     font-size: 12px;
     bottom: 0;
-    height: 5vh;
     background: #282828;
     width: 100%;
     color: white;

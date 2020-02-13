@@ -40,8 +40,15 @@ body {
   body nav {
     padding: 0px !important; }
     body nav .navbar-header {
-      margin: 0 auto; }
-      body nav .navbar-header a {
+      margin: 0 auto;
+      width: 100%; }
+      body nav .navbar-header a.navbar-brand {
+        white-space: normal !important;
+        word-break: break-word;
+        text-align: center;
+        width: 100%;
+        overflow: hidden;
+        word-wrap: normal;
         font-weight: 600;
         margin-right: 0;
         margin-top: 20px;
@@ -158,7 +165,6 @@ body {
     padding: 8px;
     font-size: 12px;
     bottom: 0;
-    height: 5vh;
     background: #282828;
     width: 100%;
     color: white; }
